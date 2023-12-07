@@ -1,0 +1,34 @@
+{
+  "name": "trehinos/thor-new",
+  "description": "Nouveau module pour Thor",
+  "version": "1.0",
+  "type": "library",
+  "keywords": [
+    "php8.2",
+    "thor-module"
+  ],
+  "license": "MIT",
+  "minimum-stability": "stable",
+  "authors": [
+    {
+      "name": "Sébastien GELDREICH",
+      "email": "trehinos@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Thor\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  },
+  "require": {
+    "php": "^8.2"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9"
+  }
+}
