@@ -1,6 +1,6 @@
 {
-  "name": "trehinos/thor-new",
-  "description": "Nouveau module pour Thor",
+  "name": "trehinos/thor-web",
+  "description": "Http/Web module for Thor",
   "version": "1.0",
   "type": "library",
   "keywords": [
@@ -8,16 +8,38 @@
     "thor-module"
   ],
   "license": "MIT",
-  "minimum-stability": "stable",
+  "minimum-stability": "dev",
   "authors": [
     {
       "name": "Sébastien GELDREICH",
       "email": "trehinos@gmail.com"
     }
   ],
+  "repositories": {
+    "trehinos/thor-common": {
+      "type": "vcs",
+      "url": "https://asgard.trehinos.eu/thor2/thor-common"
+    },
+    "trehinos/thor-filesystem": {
+      "type": "vcs",
+      "url": "https://asgard.trehinos.eu/thor2/thor-filesystem"
+    },
+    "trehinos/thor-process": {
+      "type": "vcs",
+      "url": "https://asgard.trehinos.eu/thor2/thor-process"
+    },
+    "trehinos/thor-pdo-extension": {
+      "type": "vcs",
+      "url": "https://asgard.trehinos.eu/thor2/thor-pdo-extension"
+    },
+    "trehinos/thor-http": {
+      "type": "vcs",
+      "url": "https://asgard.trehinos.eu/thor2/thor-http"
+    }
+  },
   "autoload": {
     "psr-4": {
-      "Thor\\": "src/"
+      "Thor\\Http\\Web\\": "src/"
     }
   },
   "autoload-dev": {
@@ -26,7 +48,9 @@
     }
   },
   "require": {
-    "php": "^8.2"
+    "php": "^8.2",
+    "trehinos/thor-http": "dev-master",
+    "twig/twig": "^3"
   },
   "require-dev": {
     "phpunit/phpunit": "^9"
